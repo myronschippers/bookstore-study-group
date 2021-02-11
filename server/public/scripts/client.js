@@ -56,11 +56,23 @@ function renderBooks(books) {
 
   for (let i = 0; i < books.length; i += 1) {
     let book = books[i];
+
+    let readContent;
+    let rowClass;
+    // create condition
+    if (book.isRead === true) {
+      rowClass = 'readBook';
+      readContent = 'READ';
+    } else {
+      readContent = 'NOT READ';
+    }
+
     // For each book, append a new row to our table
     $('#bookShelf').append(`
-      <tr>
+      <tr class="${rowClass}">
         <td>${book.title}</td>
         <td>${book.author}</td>
+        <td>${readContent}</td>
       </tr>
     `);
   }
