@@ -6,9 +6,9 @@ CREATE TABLE "books" (
   "isRead" BOOLEAN DEFAULT FALSE
 );
 
-INSERT INTO "books" 
-	("title", "author", "published") 
-VALUES 
+INSERT INTO "books"
+	("title", "author", "published")
+VALUES
 	('Another Brooklyn', 'Jacqueline Woodson', '8-9-2016'),
 	('The Girl on the Train', 'Paula Hawkins', '1-13-2015'),
 	('Scandalous Behavior', 'Stuart Woods', '1-5-2016'),
